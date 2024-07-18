@@ -34,6 +34,18 @@ Sample output are provided in the output folder.
 
 
 ## 2. ParaTAA with SD v1.5
+The used SD models can be found here \[[SD 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)\]. Most of the parameters are the same as the ones used in the paper, in the following command, we only list the key parameters.
+```
+# Running ParaTAA with DiT on 8 GPUs, key parameters below
+accelerate launch --num_processes 8 parallel_sd.py \
+--prompt <> \ # The prompt use for text-to-image generation
+--model_path <> \ # The path to the diffuser pipeline of the SD 1.5 model
+
+# Example
+accelerate launch --num_processes 8 parallel_sd.py --max_steps 15 --fp16
+```
+The output will be the same as the one in the case 1.
+
 
 ## 3. ParaTAA with SD v1.5, initializing from existing samples
 
