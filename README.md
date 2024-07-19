@@ -2,6 +2,11 @@
 This is the official repo for the paper "Accelerating Parallel Sampling of Diffusion Models" Tang et al. ICML 2024 \[[paper](https://openreview.net/forum?id=CjVWen8aJL)\].
 
 # Environment
+Here we provide the conda environment file for the code.
+```
+conda env create -f environment.yml
+conda activate paraTAA
+```
 
 # Use cases
 Remark: In the following implementation, we use accelerate package from HuggingFace to implement DDP (Distributed Data Parallelism) for spliting the batch inference across 8 GPUs evenly.
