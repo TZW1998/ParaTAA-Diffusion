@@ -1,0 +1,1 @@
+Namespace(timesteps=50, cfg_scale=4.0, eta=0.0, seed=0, prompt1='a cute dog', prompt2='a cute cat', window_size=100, order=20, memory_size=2, tol1=0.001, tol2=0.001, max_steps=None, variation_steps=30, model_path='/mnt/workspace/workgroup/tangzhiwei.tzw/sdv1-5-full-diffuser', output_path='/mnt/workspace/workgroup/tangzhiwei.tzw/spec_samp/ParaTAA-Diffusion/output', fp16=True)
